@@ -12,15 +12,27 @@ package metier;
 public class Apparait {
 
     private int numVip;
+    private String nomVip;
     private String idPhoto;
 
     public Apparait() {
     }
 
-    public Apparait(int numVip, String idPhoto) {
+    public Apparait(int numVip, String nomVip, String idPhoto) {
         this.numVip = numVip;
+        this.nomVip = nomVip;
         this.idPhoto = idPhoto;
     }
+
+    public String getNomVip() {
+        return nomVip;
+    }
+
+    public void setNomVip(String nomVip) {
+        this.nomVip = nomVip;
+    }
+
+    
 
     public int getNumVip() {
         return numVip;
@@ -40,7 +52,9 @@ public class Apparait {
 
     @Override
     public String toString() {
-        return "Apparait{" + "numVip=" + numVip + ", idPhoto=" + idPhoto + '}';
+        return "Apparait{" + "numVip=" + numVip + ", nomVip=" + nomVip + ", idPhoto=" + idPhoto + '}';
     }
+
+    
 
 }

@@ -26,14 +26,15 @@ public class DAOApparait {
 
     public void chargerApparait(List<Apparait> laListe) throws SQLException, Exception {
         cnx = SourceMariaDB.seConnecter();
-        String requete = "SELECT * FROM APPARAIT";
+        String requete = "Select m.numVip, concat(c1.prenomVip, ' ', c1.nomVip) AS vip, idPhoto FROM APPARAIT AS m JOIN VIP AS c1 ON m.numVip=c1.numVip";
         PreparedStatement pstmt = cnx.prepareStatement(requete);
         ResultSet rst = pstmt.executeQuery();
         while (rst.next()) {
             int numVip = rst.getInt(1);
-            String idPhoto = rst.getString(2);
+            String nom = rst.getString(2);
+            String idPhoto = rst.getString(3);
 
-            Apparait apparait = new Apparait(numVip, idPhoto);
+            Apparait apparait = new Apparait(numVip, nom, idPhoto);
             laListe.add(apparait);
         }
 

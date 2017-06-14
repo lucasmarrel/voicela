@@ -25,7 +25,7 @@ public class ModelJTableApparait extends AbstractTableModel {
     public ModelJTableApparait() throws Exception {
         leDaoApparait = new DAOApparait();
         laListe = new ArrayList<>();
-        titre = new String[]{"Num Vip", "ID Photo"};
+        titre = new String[]{"Num Vip", "Nom Vip", "ID Photo"};
 
     }
 
@@ -46,6 +46,8 @@ public class ModelJTableApparait extends AbstractTableModel {
             case 0:
                 return apparait.getNumVip();
             case 1:
+                return apparait.getNomVip();
+            case 2:
                 return apparait.getIdPhoto();
 
         }

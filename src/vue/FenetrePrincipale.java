@@ -1072,7 +1072,7 @@ public class FenetrePrincipale extends javax.swing.JFrame {
                 if (reponse == JOptionPane.YES_OPTION) {
                     int row = tableApparait.getSelectedRow();
                     int numVip = (int) tableApparait.getValueAt(row, 0);
-                    String idPhoto = (String) tableApparait.getValueAt(row, 1);
+                    String idPhoto = (String) tableApparait.getValueAt(row, 2);
                     modelTableApparait.supprimerApparait(numVip, idPhoto);
                 }
             } else {
