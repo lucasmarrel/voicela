@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
+                      <Component id="lbTitreEvenement" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lbNomVipEvenement" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace pref="38" max="32767" attributes="0"/>
+                                  <Component id="cbVipEvenement" min="-2" pref="163" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="lbConjointEvenement" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Component id="lbLieuMariage" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="cbConjointEvenement" pref="163" max="32767" attributes="0"/>
+                                      <Component id="txtLieuMariage" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lbDateMariage" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="lbJourtMariage" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="txtJourMariage" min="-2" pref="31" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="lbMoisMariage" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                          <Component id="txtMoisMariage" min="-2" pref="31" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="lbAnnéeMariage" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="txtAnneeMariage" min="-2" pref="45" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="lbDateDivorce" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="lbJourDivorce" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Component id="txtJourDivorce" min="-2" pref="31" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="lbMoisDivorce" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                                  <Component id="txtMoisDivorce" min="-2" pref="31" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="lbAnnéeDivorce" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Component id="txtAnneeDivorce" min="-2" pref="45" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="btValiderEvenement" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                                  <Component id="btAnnulerEvenement" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace pref="49" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="lbTitreEvenement" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lbNomVipEvenement" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cbVipEvenement" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lbConjointEvenement" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cbConjointEvenement" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lbLieuMariage" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtLieuMariage" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <Component id="lbDateMariage" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lbJourtMariage" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtJourMariage" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbMoisMariage" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtMoisMariage" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbAnnéeMariage" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtAnneeMariage" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="lbDateDivorce" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lbJourDivorce" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtJourDivorce" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbMoisDivorce" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtMoisDivorce" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbAnnéeDivorce" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtAnneeDivorce" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btValiderEvenement" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btAnnulerEvenement" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="40" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lbTitreEvenement">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="EVENEMENT VIP"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbNomVipEvenement">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Vip :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbConjointEvenement">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Conjoint"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cbConjointEvenement">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="leModelComboBoxConjoint" type="code"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbDateMariage">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Date Mariage :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbJourtMariage">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Jour"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtJourMariage">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbMoisMariage">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Mois"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtMoisMariage">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtAnneeMariage">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbAnn&#xe9;eMariage">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ann&#xe9;e"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbDateDivorce">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Date Divorce :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbJourDivorce">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Jour"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtJourDivorce">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbMoisDivorce">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Mois"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtMoisDivorce">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbAnn&#xe9;eDivorce">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ann&#xe9;e"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtAnneeDivorce">
+    </Component>
+    <Component class="javax.swing.JButton" name="btValiderEvenement">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Valider"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btValiderEvenementActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btAnnulerEvenement">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Annuler"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btAnnulerEvenementActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cbVipEvenement">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="leModelComboBoxVip" type="code"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbLieuMariage">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Lieu :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtLieuMariage">
+    </Component>
+  </SubComponents>
+</Form>
