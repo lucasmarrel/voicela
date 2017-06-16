@@ -280,7 +280,6 @@ public class FenetreAjoutEvenement extends javax.swing.JDialog {
                 );
                 unEvenement.setDateDivorce(dateDivorce);
             }
-
             modal = true;
             this.dispose();
 

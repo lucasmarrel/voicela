@@ -45,6 +45,8 @@ public class DAOEvenement {
             String lieuMariage = rst.getString(6);
             if (rst.getDate(7) != null) {
                 dateDivorce = rst.getDate(7).toLocalDate();
+            }else{
+                dateDivorce=null;
             }
 
             Evenement unEvenement = new Evenement(vip1, nomVip1, vip2, nomVip2, dateMariage, lieuMariage, dateDivorce);
