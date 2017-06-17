@@ -23,7 +23,7 @@ public class Appli {
      */
     private static DAOPays leDaoPays = new DAOPays();
     private static List<Pays> laListe = new ArrayList<>();
-    private static String pathFile = "..\\..\\CPOA\\Photos\\";
+    private static String pathFile = "/public_html/";
 
     public static void main(String args[]) {
 

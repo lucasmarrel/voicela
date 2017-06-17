@@ -5,11 +5,14 @@
  */
 package vue;
 
+import accesAuxDonnees.ConnexionFTPS;
 import accesAuxDonnees.DAOUtilisateur;
 import applivoicela.Appli;
 import java.awt.Color;
 import java.awt.Desktop;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.nio.file.Files;
 import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 import java.time.LocalDate;
@@ -31,6 +34,7 @@ import modele.ModelJTableEvenement;
 import modele.ModelJTableFilm;
 import modele.ModelJTablePhoto;
 import modele.ModelJTableRealisation;
+import org.apache.commons.net.ftp.FTPSClient;
 
 /**
  *
@@ -52,6 +56,7 @@ public class FenetrePrincipale extends javax.swing.JFrame {
     private File f;
     private Desktop desktop;
     private String filename;
+    private FTPSClient ftp;
 
     public FenetrePrincipale() {
     }
@@ -989,8 +994,17 @@ public class FenetrePrincipale extends javax.swing.JFrame {
                     int row = tablePhoto.getSelectedRow();
                     String idPhoto = (String) tablePhoto.getValueAt(row, 0);
                     modelTablePhoto.supprimerPhoto(idPhoto, row);
+                    ftp = ConnexionFTPS.CreerConnexion();
                     File src = new File(Appli.getPathFile(), idPhoto);
-                    src.delete();
+//                    src.delete();
+                    System.out.println(src.getPath());
+                    boolean ok = ftp.deleteFile(src.getPath());
+                    if(ok==true){
+                        System.out.println("supprimée !");
+                    }else{
+                        System.out.println("photo non supprimée !");
+                    }
+                    ftp.disconnect();
                 }
             } else {
                 JOptionPane.showMessageDialog(this, "Veuillez sélectionner une photo !", "Attention !", JOptionPane.WARNING_MESSAGE);
@@ -1009,10 +1023,15 @@ public class FenetrePrincipale extends javax.swing.JFrame {
 
             if (fn.doModal()) {
                 modelTablePhoto.ajouterFilm(laPhoto);
+                ftp = ConnexionFTPS.CreerConnexion();
                 File file = fn.getFile();
-                File dest = new File(Appli.getPathFile(), laPhoto.getIdPhoto());
+//                File dest = new File(Appli.getPathFile(), laPhoto.getIdPhoto());
                 File src = new File(file.getPath());
-                Files.copy(src.toPath(), dest.toPath(), REPLACE_EXISTING);
+                InputStream input = new FileInputStream(src.getPath());
+                ftp.storeFile(Appli.getPathFile()+laPhoto.getIdPhoto(), input);
+                ftp.disconnect();
+//                Files.copy(src.toPath(), dest.toPath(), REPLACE_EXISTING);
+                JOptionPane.showMessageDialog(this, "Photo envoyée avec succès !", "Ajout Photo", JOptionPane.INFORMATION_MESSAGE);
             }
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(this, ex.getMessage(), "Erreur Ajout Photo", JOptionPane.WARNING_MESSAGE);
