@@ -98,6 +98,9 @@ public class FenetrePrincipale extends javax.swing.JFrame {
             btSupprimerApp.setEnabled(false);
             btSupprimerCasting.setEnabled(false);
             btSupprimerReal.setEnabled(false);
+            btModifierPhoto.setVisible(false);
+            btSupprimerPhoto.setVisible(false);
+            btApercuPhoto.setVisible(false);
 
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
