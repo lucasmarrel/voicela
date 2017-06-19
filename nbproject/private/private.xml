@@ -2,6 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/Z:/public_html/Projet%20CPOA/voicela/src/vue/FenetrePrincipale.java</file>
+            <file>file:/Z:/public_html/Projet%20CPOA/voicela/src/applivoicela/Appli.java</file>
+            <file>file:/Z:/public_html/Projet%20CPOA/voicela/src/metier/Apparait.java</file>
+            <file>file:/Z:/public_html/Projet%20CPOA/voicela/src/modele/ModelJTableApparait.java</file>
+            <file>file:/Z:/public_html/Projet%20CPOA/voicela/src/accesAuxDonnees/DAOApparait.java</file>
+        </group>
     </open-files>
 </project-private>
